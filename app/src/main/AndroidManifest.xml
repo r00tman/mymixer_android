@@ -3,7 +3,6 @@
     package="org.r00tman.id14controlapp" >
 
     <uses-feature android:name="android.hardware.usb.host" />
-    <uses-sdk android:minSdkVersion="12" />
 
     <application
         android:allowBackup="true"
