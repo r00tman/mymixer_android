@@ -15,13 +15,29 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
     >
         <SeekBar
-                android:layout_width="300dp"
-                android:layout_height="wrap_content" android:id="@+id/seekBar" android:max="1000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/monitorVolume" android:max="1000"
                 android:progress="500"/>
         <Button
-                android:text="Do it"
+                android:text="Monitor Volume"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/button2" android:onClick="onClick"/>
+                android:layout_height="wrap_content" android:id="@+id/button3" android:onClick="onMClick"/>
+        <SeekBar
+                android:layout_width="300dp"
+                android:layout_height="wrap_content" android:id="@+id/speakerVolume" android:max="1000"
+                android:progress="500"/>
+        <Button
+                android:text="Speaker Volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button2" android:onClick="onSPClick"/>
+        <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/headphoneVolume" android:max="1000"
+                android:progress="500"/>
+        <Button
+                android:text="Headphone Volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/button4" android:onClick="onHPClick"/>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
